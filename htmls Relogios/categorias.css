@@ -1,0 +1,74 @@
+.body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Categorias {
+   
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+   
+}
+
+.Categorias img{
+    margin: 15px;
+}
+
+.Feminino img{
+    width: 400px;
+    height: 400px;
+    border: 2px solid #491C67;
+    border-radius: 25% 10%;
+
+
+}
+
+.Masculino img{
+    width: 400px;
+    height: 400px;
+    border: 2px solid #491C67;
+    border-radius: 25% 10%;
+
+}
+
+.acesse button{
+    background: transparent;
+    border: 2px solid #682e68;
+    color: #682e68;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+}
+
+
+.acesse button:hover {
+    box-shadow: 0 0 15px #682e68, inset 0 0 15px #682e68;
+}
+
+.Feminino img:hover{
+    
+        box-shadow: 0 0 15px #682e68, inset 0 0 15px #682e68;
+}
+
+.Masculino img:hover{
+    
+    box-shadow: 0 0 15px #682e68, inset 0 0 15px #682e68;
+}
+
+.Feminino p{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #491C67;
+
+}
+
+.Masculino p{
+    font-family:Arial, Helvetica, sans-serif;
+    color: #491C67;
+
+    
+}

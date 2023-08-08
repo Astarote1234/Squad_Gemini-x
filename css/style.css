@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
+
+@font-face {
+
+    font-family: 'Be Vietnam Medium';
+
+    src: url("../Fontes/BeVietnam-Medium.woff");
+
+}
+
+@font-face {
+
+    font-family: 'Playlist';
+
+    src: url("../Fontes/Playlist\ Script.otf");
+
+}
+
+@font-face {
+
+    font-family: 'Kollektif';
+
+    src: url("../Fontes/Kollektif-Bold.ttf");
+
+}
+
+/* body {
+ margin-left: 40px;
+ margin-right: 40px;
+} */
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+    display: flex;
+    /* Adiciona display flex para centralizar o conteúdo */
+    justify-content: center;
+    /* Centraliza o conteúdo horizontalmente */
+    align-items: center;
+    /* Centraliza o conteúdo verticalmente */
+}
+
+
+
+.section {
+    padding-top: 70px;
+    /* Substitua 60px pelo valor da altura da sua navbar */
+
+}
+
+.logo {
+    width: 200px;
+    /* Defina a largura desejada */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+
+
+.carrosel.container {
+    width: 100%;
+    justify-content: center;
+    margin-left: 20px;
+    /* Margem esquerda */
+    margin-right: 20px;
+    /* Margem direita */
+}
+
+
+.purple-bar {
+    background-color: #491C67;
+    height: 15px;
+    width: 100%;
+    position: fixed;
+    top: 85px;
+    /* Ajuste este valor de acordo com a altura da sua navbar */
+    z-index: 990;
+    /* Defina um valor menor que o z-index da sua navbar */
+}
+
+/* CATEGORIAS */
+.dropdown-menu {
+    background-color: #491C67;
+    border-radius: 30px;
+}
+
+.dropdown-menu ul {
+    max-width: 100%;
+    padding: 0;
+    margin: 3%;
+}
+
+.dropdown-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropdown-menu li {
+    display: inline;
+    font-family: 'Be Vietnam Medium';
+}
+
+.dropdown-menu li a {
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    display: grid;
+    transition: background .8s;
+    border-radius: 50px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #602e82;
+}
+
+/* CATEGORIAS */
+
+.aneis,
+.brincos,
+.relogios,
+.colares,
+
+.category-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 15%;
+    /* ajuste para o espaçamento desejado */
+}
+
+.category-button {
+    width: 200px;
+    /* ajuste para o tamanho desejado */
+    height: 200px;
+    /* ajuste para o tamanho desejado */
+    margin: 10px;
+    /* ajuste para o espaçamento desejado */
+    text-align: center;
+}
+
+.category-button img {
+    width: 100%;
+    height: 80%;
+    /* ajuste para o tamanho desejado */
+    object-fit: cover;
+}
+
+.category-name {
+    height: 30%;
+    /* ajuste para o tamanho desejado */
+    line-height: 40px;
+    /* ajuste para o alinhamento vertical desejado */
+}
+
+
+.carrosel.container{
+    z-index: 9999; /* Um valor alto para garantir que o carrossel esteja no topo */
+    position: relative;
+}
+
+.carousel-caption {
+    color: #491C67;
+    text-shadow: 1px 1px #fff;
+}
+
+
+/* CARDS DE IMAGEM */
+.card {
+    width: 18rem;
+    margin-right: 10px;
+    /* Espaçamento entre os cards */
+}
+
+/* Define um estilo para o container de produtos */
+.container-md {
+    display: flex;
+    /* Transforma o container em um flex container */
+    justify-content: space-between;
+    /* Alinha os cards com espaçamento entre eles */
+}
+
+
+
+/* inicio da copy */
+
+.Container-card-1 {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 1rem;
+    /* Define o contêiner para ocupar a largura da página */
+    max-width: 100%;
+    background-color: #491C67;
+}
+
+.cards {
+    /* Defina o tamanho dos contêineres das imagens (4x2) */
+    width: calc(50% - 1rem);
+    /* Subtrai a largura da margem (2rem) para garantir que haja espaço para as imagens */
+    max-width: 400px;
+    /* Define um tamanho máximo para os contêineres das imagens, caso a tela seja muito estreita */
+}
+
+.cards img {
+    width: 100%;
+    /* Ajusta a largura da imagem para ocupar todo o espaço disponível no contêiner */
+    height: auto;
+    margin: 1%;
+    /* Remove a margem padrão das imagens */
+    transition: 0.35s ease;
+}
+
+.cards img:hover {
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+}
+
+.cards_text {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+
+
+}
+
+.titulo-categorias {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.Container-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 3rem;
+    color: #fff;
+}
+
+.Container-categorias img:hover {
+    transform: scale(0.9) translateY(-5px);
+    cursor: pointer;
+    transition: 0.3s;
+
+
+}
+
+.categoria img {
+    width: 250px;
+    height: auto;
+}
+
+.categoria {
+    background-color: #491C67;
+
+}
+
+.titulo-categorias {
+    color: #491C67;
+}
+
+/* BANNER */
+
+.banner {
+    padding: 7rem 0 0 8.5rem;
+    line-height: 4rem;
+    width: 100%;
+
+}
+
+.banner h1 {
+    font-size: 6rem;
+
+}
+
+.banner p {
+    font-size: 28px;
+}
+
+.banner .btn-clique-aqui {
+    background-color: #491C67;
+    padding: 1rem 3rem 1rem 3rem;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.banner .btn-clique-aqui:hover {
+    background-color: #491C67;
+    transform: scaleY(1.2);
+}
+
+/* BOTÂO SEARCH */
+
+.btn-outline-success {
+    color: #491C67;
+    border-color: #491C67;
+}
+
+.btn-outline-success:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+    background-color: #491C67;
+}
+
+.form-control me-2 {
+    border-color: #491C67;
+}
+
+/* BOTÂO SEARCH */
+
+.banner {
+    position: relative;
+    /* Define a posição relativa para que possamos posicionar a imagem e o texto */
+    height: 500px;
+    /* Defina a altura da div Banner */
+    padding: 25px;
+}
+
+.categoria h1 .Banner img {
+    position: absolute;
+    /* Define a posição absoluta para que a imagem fique sobreposta ao texto */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* Ajusta o dimensionamento da imagem para cobrir a div */
+    z-index: -1;
+    /* Define um valor negativo para que a imagem fique atrás do texto */
+}
+
+.Banner h1,
+.Banner p {
+    color: #491C67;
+    /* Define a cor do texto para que seja visível na imagem de fundo */
+    /* Outros estilos para o texto, se necessário */
+}
+
+#Contato {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-around;
+    background-color: #491C67;
+    padding: 8rem;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+
+.meio-contato h3 {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+}
+
+.meio-contato h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.meio-contato li {
+    margin-bottom: 15px;
+}
+
+.meio-contato li a {
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+    transition: all .35s ease;
+}
+
+.last-text {
+    text-align: center;
+    background-color: #491C67;
+    color: #fff;
+}
+
+
+/*  cards */
+
+.card2 {
+    text-align: left;
+    background-color: rgb(234, 176, 252);
+    margin: 30px;
+}
+
+.card2-card-body {
+    display: flex;
+
+}
+
+.img-box:hover {
+    transition: all 3s;
+}
+
+
+
+.img-box {
+    display: flex;
+    justify-content: right;
+
+}
+
+.img-box img {
+    max-width: 400px;
+    max-height: 400px;
+
+}
+
+.img-box img.img-hover {
+    display: none;
+}
+
+.img-box:hover img.img-default {
+    display: none;
+}
+
+.img-box:hover img.img-hover {
+    display: inherit;
+}
+
+
+.sobrenos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cardsobre {
+    display: flex;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+    width: 95%;
+}
+
+.cardsobre img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.cardsobre .content {
+    padding: 150px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.conteudo {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo h1 {
+    font-size: 20vw;
+    text-transform: uppercase;
+}
+
+footer {
+    width: 100%;
+    min-height: 250px;
+    background: #491C67;
+    display: flex;
+}
+
+footer .boxs {
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
+}
+
+footer .boxs:nth-child(4) {
+    width: 400px;
+}
+
+.boxs h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.boxs ul li {
+    margin: 10px 0px;
+    list-style: none;
+}
+
+.boxs ul li a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.boxs ul li a:hover {
+    color: #fff;
+}
+
+.boxs p {
+    color: #fff;
+    text-align: justify;
+}
+
+.footer {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #491C67;
+    padding: 0px 20px;
+
+}
+
+.footer h2 {
+    color: #fff;
+}
+
+.footer .sociais {
+    display: flex;
+}
+
+.sociais .social {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #ddd;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background .3s linear;
+}
+
+.sociais .social a {
+    color: #000;
+    font-size: 1.5em;
+    transition: color .3s linear;
+}
+
+.sociais .social:hover {
+    background: #a752df;
+}
+
+.sociais .social:hover a {
+    color: #fff;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+@media (max-width: 950px) {
+    footer {
+
+        flex-direction: column;
+    }
+
+    footer .boxs {
+        width: 100px;
+        text-align: center;
+    }
+
+    footer .boxs:nth-child(4) {
+        width: 100%;
+    }
+
+}

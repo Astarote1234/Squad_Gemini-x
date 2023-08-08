@@ -1,0 +1,573 @@
+*{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+
+
+}
+.body {
+    padding: 0;
+    margin: 0;
+}
+
+
+.Titulo{
+    background-color: #491C67;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-size: 2em;
+    padding: 0%;
+    border-radius: 5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+   
+}
+
+.produtos{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+
+.cardproduto1 img, .cardproduto2 img {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 0;
+    border: 2px solid #e8e8e8;
+    border-radius: 2%;
+    cursor: pointer;
+      
+}
+
+
+
+
+.Produto {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 100px 100px 0 100px;
+    text-align: center;
+    
+    
+}
+
+.Produto1{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 100px 100px 0 100px;
+    text-align: center;
+}
+
+.Produto p{
+    position: absolute;
+    margin-left: 50px;
+    
+}
+.Produto1 p{
+    position: absolute;
+    margin-left: 50px;
+    
+}
+
+.comprar button {
+    position: absolute;
+    margin-left: 35px;
+    background: transparent;
+    border: 2px solid #682e68;
+    color: #682e68;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    border-radius: 10px;
+   
+}
+
+.comprar button:hover {
+    box-shadow: 0 0 15px #682e68, inset 0 0 15px #682e68;
+   
+    
+}
+
+
+.Produto img:hover{
+    box-shadow: 0 0 15px #682e68, inset 0 0 15px #682e68;
+    
+    
+}
+
+.Produto1 img:hover{
+    box-shadow: 0 0 15px #682e68, inset 0 0 15px #682e68;
+}
+
+
+
+#Contato {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-around;
+    background-color: #491C67;
+    padding: 8rem;
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    border: solid black;
+}
+
+.meio-contato h3 {
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 1.6rem;
+}
+
+.meio-contato h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.meio-contato li {
+    margin-bottom: 15px;
+}
+
+.meio-contato li a {
+    display: block;
+    color: #ffffff;
+    font-weight: 600;
+    transition: all .35s ease;
+}
+
+.last-text {
+    text-align: center;
+    background-color: #491C67;
+    color: #fff;
+}
+
+.baumeandmercier
+{
+  position: absolute;
+  top: 45%;
+  margin-left: 37%
+  
+}
+
+.baumeandmercier img{
+    
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+    
+}
+
+.zoom {
+    
+    transition: transform .2s; /* Animation */
+    
+  }
+  
+  .zoom:hover {
+
+    transform: scale(2.0); /* (200% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+
+  /* RIVISAR DAQUI PARA BAIXO */
+
+  
+  .nautica {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .nautica img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .lacosterose {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .lacosterose img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .lacosterosa {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .lacosterosa img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .lacoste {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .lacoste img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .guessladies {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .guessladies img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .coach {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .coach img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .victorinox {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .victorinox img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .tommymasculino {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .tommymasculino img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .tommyhilfigerprata {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .tommyhilfigerprata img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .tommyhilfiger {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .tommyhilfiger img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .calvinkleinmasc {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .calvinkleinmasc img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .bulovaprecisionist {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .bulovaprecisionist img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .bulova {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .bulova img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .bulovasutton {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .bulovasutton img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .boss {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .boss img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .baumeandmercier {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .baumeandmercier img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .alphacentauri {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .alphacentauri img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .antares {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .antares img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .deneb {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .deneb img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .estrelapolar {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .estrelapolar img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .mercurio {
+    position: absolute;
+    top: 45%;
+    margin-left: 37%
+  }
+  
+  .mercurio img {
+  
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+  
+  }
+  
+  .rigel
+  {
+  position: absolute;
+  top: 45%;
+  margin-left: 37%
+  
+  }
+  
+  .rigel img{
+    
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+    
+  }
+  
+  .sirius
+  {
+  position: absolute;
+  top: 45%;
+  margin-left: 37%
+  
+  }
+  
+  .sirius img{
+    
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+    
+  }
+  
+  .supernova
+  {
+  position: absolute;
+  top: 45%;
+  margin-left: 37%
+  
+  }
+  
+  .supernova img{
+    
+    margin: 11px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid #682e68;
+    border-radius: 5%;
+    
+  }

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz: Descubra a melhor pedra para a sua pulseira</title>
+  <link rel="stylesheet" href="../css/estiloquiz.css">
+</head>
+
+<body>
+
+  <div class="voltar">
+    <button><a href="index-bootstrap.html">Voltar</a></button>
+  </div>
+
+  <div id="quiz-container">
+    <h1>Descubra a melhor pedra para a sua pulseira</h1>
+    <form id="quiz-form">
+      <p>Qual destas características mais combina com você?</p>
+      <label><input type="radio" name="question1" value="a"> Sou uma pessoa calma e tranquila.</label>
+      <label><input type="radio" name="question1" value="b"> Valorizo o amor, a compaixão e a harmonia.</label>
+      <label><input type="radio" name="question1" value="c"> Gosto de ter equilíbrio e clareza mental.</label>
+      <label><input type="radio" name="question1" value="d"> Sou apaixonado(a) e motivado(a).</label>
+      <label><input type="radio" name="question1" value="e"> Tenho uma personalidade única e criativa.</label>
+      <br>
+      <p>O que você procura ao usar uma pulseira com pedras naturais?</p>
+      <label><input type="radio" name="question2" value="a"> Proteção e energia positiva.</label>
+      <label><input type="radio" name="question2" value="b"> Amor-próprio e autoestima.</label>
+      <label><input type="radio" name="question2" value="c"> Equilíbrio emocional e espiritual.</label>
+      <label><input type="radio" name="question2" value="d"> Energia e vitalidade.</label>
+      <label><input type="radio" name="question2" value="e"> Expressar minha personalidade e estilo.</label>
+      <br>
+      <p>Como você se sente em relação à natureza?</p>
+      <label><input type="radio" name="question3" value="a"> Tenho uma conexão profunda com a natureza e me sinto
+        revigorado(a) ao ar livre.</label>
+      <label><input type="radio" name="question3" value="b"> Aprecio a natureza e busco momentos de tranquilidade em
+        ambientes naturais.</label>
+      <label><input type="radio" name="question3" value="c"> Gosto de estar em contato com a natureza, mas não
+        necessariamente busco isso com frequência.</label>
+      <label><input type="radio" name="question3" value="d"> Minha relação com a natureza é neutra, não me afeta
+        muito.</label>
+      <label><input type="radio" name="question3" value="e"> Não sou muito conectado(a) à natureza e prefiro ambientes
+        urbanos.</label>
+
+      <button type="button" onclick="showResult()">Ver resultado</button>
+    </form>
+
+    <div id="result-container"></div>
+
+
+  </div>
+
+
+  <script>
+
+    function showResult() {
+      const form = document.getElementById('quiz-form');
+      const resultContainer = document.getElementById('result-container');
+      const answers = new FormData(form);
+
+      // Contagem das respostas
+      const responses = {
+        a: 0,
+        b: 0,
+        c: 0,
+        d: 0,
+        e: 0
+      };
+
+      for (const answer of answers.values()) {
+        responses[answer]++;
+      }
+
+      let result;
+      let imagemUrl;
+
+      // Determinar o resultado com base nas respostas
+      if (responses.a >= responses.b && responses.a >= responses.c && responses.a >= responses.d && responses.a >= responses.e) {
+        result = ' Vênus - Feito do quartzo rosa Conhecida como a pedra do amor e da compaixão. Na astrologia, o amor e a compaixão estão associados ao planeta Vênus, que governa os relacionamentos, o afeto, o amor-próprio e os valores estéticos.';
+        imagemUrl = "../img/colarvenusquartzo.webp";
+      } else if (responses.b >= responses.c && responses.b >= responses.d && responses.b >= responses.e) {
+        result = ' Lua - Sua pedra indicada é a ágata. Ela representa equilíbrio, proteção e harmonia emocional. Essas características podem ser associadas à Lua, pois a Lua tem uma forte influência sobre as emoções e sentimentos. A Lua também está relacionada à intuição, proteção e feminilidade, aspectos que podem estar alinhados com as propriedades da ágata.';
+        imagemUrl = "../img/colarluapedraagata";
+      } else if (responses.c >= responses.d && responses.c >= responses.e) {
+        result = ' Sol - Feito da pedra olho de tigre. Ele promove equilíbrio emocional, foco mental e proteção. Podemos relacionar essa pedra com o Sol, pois o Sol é um símbolo de vitalidade, clareza mental e força de vontade. Além disso, o Sol está associado ao poder pessoal e à autoestima, características que o olho de tigre pode ajudar a reforçar.';
+        imagemUrl = "../img/Colar_Olho_De_Tigre_1.jpg";
+      } else if (responses.d >= responses.e) {
+        result = ' Marte - Sua pedra indicada é a granada. Ela energiza e traz motivação, vitalidade e paixão. Essas qualidades podem ser relacionadas ao planeta Marte, que representa a energia, a paixão, a ação e a força de vontade. A granada pode auxiliar no estímulo dessas características, alinhando-se com a energia marciana.';
+        imagemUrl = "../img/Colar-Granada-1.webp";
+      } else {
+        result = ' Netuno -  Pedra indicada é a água-marinha. Ela é uma pedra calmante que pode ajudar a trazer um pouco da energia da natureza para o seu dia a dia. Ela pode ser relacionada com o elemento água e o planeta Netuno. Netuno está associado à intuição, inspiração, imaginação e à conexão com o reino espiritual. A água-marinha, com sua sensação refrescante e calmante, pode simbolizar a energia do elemento água e as propriedades inspiradoras de Netuno.';
+        imagemUrl = "../img/Colar-Neturno-Agua-Marinha-1.webp";
+      }
+
+      // Exibir o resultado com a imagem
+      resultContainer.innerHTML = `<p>Seu colar indicado é: ${result}.</p><img src="${imagemUrl}" alt="Imagem do resultado" width="300" height="200">`;
+    }
+  </script>
+
+</body>
+
+</html>
